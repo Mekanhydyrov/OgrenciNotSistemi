@@ -1,0 +1,154 @@
+﻿html {
+    background-image: url('../../Gif/Login/LSsT.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.kapsayci {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    margin-top: 50px;
+}
+
+    .kapsayci h1 {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .kapsayci .txt-info {
+        width: 400px;
+        margin: auto;
+    }
+
+    .kapsayci .TxtSifre,
+    .kapsayci .TxtNo {
+        height: 30px;
+        border: none;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #222;
+        font-size: 15px;
+    }
+
+    .kapsayci .BtnOgrenci {
+        height: 40px;
+        width: 100%;
+        background: #ff6a00;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 20px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .kapsayci .BtnOgretmen {
+        height: 40px;
+        width: 100%;
+        background: #999;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+        .kapsayci .BtnOgretmen:hover,
+        .kapsayci .BtnOgrenci:hover {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+    .kapsayci .txt-info .Btn-info {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+        .kapsayci .txt-info .Btn-info .BtnSiremiUnuttum {
+            background: #ff0000;
+            width: 48%;
+            height: 30px;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .kapsayci .txt-info .Btn-info .BtnYardim {
+            background: #3ea3fa;
+            width: 48%;
+            height: 30px;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+            .kapsayci .txt-info .Btn-info .Btniptal:hover,
+            .kapsayci .txt-info .Btn-info .BtnSiremiUnuttum:hover,
+            .kapsayci .txt-info .Btn-info .BtnYardim:hover {
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+@media only screen and (max-width:980px) {
+    html {
+        background: none;
+    }
+
+    .kapsayci {
+        width: 100%;
+    }
+
+        .kapsayci h1 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .kapsayci .txt-info {
+            width: 95%;
+            margin: auto;
+        }
+}
+
+@media only screen and (max-width:680px) {
+    html {
+        background: none;
+    }
+
+    .kapsayci {
+        width: 100%;
+    }
+
+        .kapsayci h1 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .kapsayci .txt-info {
+            width: 95%;
+            margin: auto;
+        }
+}
+
+@media only screen and (max-width:360px) {
+    html {
+        background: none;
+    }
+
+    .kapsayci {
+        width: 100%;
+    }
+
+        .kapsayci h1 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 24px;
+        }
+}

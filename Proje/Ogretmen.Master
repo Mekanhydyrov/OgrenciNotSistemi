@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ogretmen.master.cs" Inherits="OgrenciKayitWeb.Ogretmen" %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Sınav Not Sistemi</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <link href="css/Galeri.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+         <!-- Bootstrap CSS CDN -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Our Custom CSS -->
+        <link href="css/StyleSheet2.css" rel="stylesheet" />
+        <link href="css/Duzenleme.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>MENÜLER</h3>
+                    <strong>BS</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-user-graduate"></i>
+                            Öğrenci Listesi
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="AnaSayfa.aspx"><i class="fas fa-list"></i>Öğrenci Listesi</a></li>
+                            <li><a href="OgrEkle.aspx"><i class="fas fa-user-plus"></i>Öğrenci Ekle</a></li>
+                            <li><a href="OgrBul"><i class="fas fa-search"></i>Öğrenci Bul</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="DersListesi.aspx">
+                            <i class="fas fa-briefcase"></i>
+                            Dersler
+                        </a>
+                         <li class="active">
+                        <a href="#Mesajlar" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-envelope-open-text"></i>
+                            Mesajlar
+                        </a>
+                        <ul class="collapse list-unstyled" id="Mesajlar">
+                            <li><a href="GelenMesaj.aspx"><i class="fas fa-file-download"></i>Gelen Mesajlar</a></li>
+                            <li><a href="GidenMesaj.aspx"><i class="fas fa-file-upload"></i>Giden Mesajlar</a></li> 
+                             <li><a href="MesajYaz.aspx"><i class="fas fa-comment-medical"></i>Mesaj Yaz</a></li> 
+                        </ul>
+                   
+                     <li class="active">
+                        <a href="#Duyuru" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-bullhorn"></i>
+                            Duyurular
+                        </a>
+                        <ul class="collapse list-unstyled" id="Duyuru">
+                            <li><a href="DuyuruListesi.aspx"><i class="fas fa-list"></i>Duyuru Listesi</a></li>
+                            <li><a href="DuyuruEkle.aspx"><i class="fas fa-puzzle-piece"></i>Duyuru Ekle</a></li>                                                      
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="NotListe.aspx">
+                            <i class="fas fa-clipboard"></i>
+                            Notlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="istatistikler.aspx">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            İstatitikler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Grafikler.aspx">
+                            <i class="far fa-list-alt"></i>
+                            Grafikler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Galeri.aspx">
+                            <i class="fas fa-camera-retro"></i>
+                            Galeri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users-cog"></i>
+                            Ayarlar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+
+        <!-- jQuery CDN -->
+        <script src="javascript/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+        <script src="javascript/js-bootstrap.min.js"></script>
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
